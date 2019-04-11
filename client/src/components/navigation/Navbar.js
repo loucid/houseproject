@@ -143,7 +143,7 @@ class MobileContainer extends Component {
 
   render() {
     const { children } = this.props
-    const { sidebarOpened } = this.state
+    const { activeItem, sidebarOpened } = this.state
 
     return (
       <Responsive
@@ -160,12 +160,28 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as='a' active>
-            Home
-          </Menu.Item>
-          <Menu.Item as='a'>Work</Menu.Item>
-          <Menu.Item as='a'>Company</Menu.Item>
-          <Menu.Item as='a'>Careers</Menu.Item>
+          <Menu.Item name='ZEPHYR' href='' />
+          <Menu.Item 
+            id='menu'
+            name='home' 
+            href=''
+            active={activeItem === 'home'} 
+            onClick={this.handleItemClick}
+          />
+          <Menu.Item 
+            id='menu'
+            name='about us'
+            href='#'
+            active={activeItem === 'about us'}
+            onClick={this.handleItemClick}
+          />
+          <Menu.Item 
+            id='menu'
+            name='links'
+            href='#'
+            active={activeItem === 'links'}
+            onClick={this.handleItemClick}
+          />
           <Menu.Item as='a'><Login /></Menu.Item>
           <Menu.Item as='a'><Signup /></Menu.Item>
         </Sidebar>

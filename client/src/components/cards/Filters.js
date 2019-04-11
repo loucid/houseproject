@@ -72,7 +72,7 @@ export default class Filters extends Component {
                 </Dropdown>
                 <Dropdown fluid selection text='Bathrooms' >
                     <Dropdown.Menu >
-                        <Dropdown.Item value='11bed1bath' onClick={this.handleItemClick}>1 Bathroom</Dropdown.Item>
+                        <Dropdown.Item value='' onClick={this.handleClick}>1 Bathroom</Dropdown.Item>
                         <Dropdown.Item>2 Bathrooms</Dropdown.Item>
                         <Dropdown.Item>3 Bathrooms</Dropdown.Item>
                         <Dropdown.Item>More than 3 Bathrooms</Dropdown.Item>
@@ -88,13 +88,13 @@ export default class Filters extends Component {
                     <Dropdown.Item>$4000+</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-                <Dropdown fluid search selection text='House Type' >
+                <Dropdown fluid selection text='House Type' >
                     <Dropdown.Menu >
                     <Dropdown.Item>House</Dropdown.Item>
                     <Dropdown.Item>Apartment</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-                <Dropdown fluid search selection text='Shared' >
+                <Dropdown fluid selection text='Shared' >
                     <Dropdown.Menu >
                     <Dropdown.Item>Yes</Dropdown.Item>
                     <Dropdown.Item>No</Dropdown.Item>
