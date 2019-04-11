@@ -12,11 +12,13 @@ class App extends Component {
     return (
       <div style={{ backgroundColor: '#292F33', height: '90vh'}}>
           <Navbar>
-            <Filters>
-            <div style={{height: '110vh', backgroundColor: '#CCD6DD', paddingTop: '1em'}}>
-                <CardList />
+            <div id='theme'>
+              <Filters>
+                <div style={{height: '110vh', paddingTop: '1em'}}>
+                    <CardList />
+                </div>
+              </Filters>
             </div>
-            </Filters>
             <Footer />
           </Navbar>
       </div>

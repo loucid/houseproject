@@ -20,7 +20,12 @@ import Signup from '../login/Signup'
 
 /* eslint-disable react/no-multi-comp */
 const HomepageHeading = ({ mobile }) => (
-  <Container text>
+  <Container 
+    text 
+    style={{ 
+      backgroundColor:'rgba(0,0,0, 0.7',
+      padding: '0em 1em 1em 1em'
+      }}>
     <Header
       as='h1'
       content='Discover Housing'
@@ -77,7 +82,13 @@ class DesktopContainer extends Component {
         >
           <Segment
             textAlign='center'
-            style={{ backgroundColor: '#292F33', minHeight: '90vh', padding: '0em 0em 0em 0em' }}
+            style={{ 
+              backgroundImage: 'url("https://static.dezeen.com/uploads/2017/04/moriyama-house-photos-edmund-sumner-architecture-photography-residential-japan_dezeen_hero-a.jpg")', 
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'auto',
+              backgroundColor: '#292F33', 
+              minHeight: '90vh', 
+              padding: '0em 0em 0em 0em' }}
             vertical
           >
             <Menu

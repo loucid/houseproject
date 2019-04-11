@@ -46,15 +46,15 @@ export default class Filters extends Component {
 
         return (
         <div>
-            <Button.Group>
+            
                 <Button icon='sliders horizontal' disabled={visible} onClick={this.handleShowClick} />
-                <Button icon='sliders horizontal' disabled={!visible} onClick={this.handleHideClick} /> 
-            </Button.Group>
+                
+            
 
             <Sidebar.Pushable>
             <Sidebar
                 as={Menu}
-                animation='slide'
+                animation='push'
                 onHide={this.handleSidebarHide}
                 vertical
                 visible={visible}

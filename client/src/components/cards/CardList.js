@@ -33,7 +33,7 @@ class CardList extends Component {
             <div>
                 <div className='cardBox'> 
                     
-                    <Header> Listings</Header>
+                    <Header inverted> Listings</Header>
                     <br />
                     {
                     !this.props.isHidden  && 
